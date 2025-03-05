@@ -1,9 +1,10 @@
-import { Component, Input } from '@angular/core';
+import { Component, Input} from '@angular/core';
+import { RouterModule } from '@angular/router';
 
 @Component({
   selector: 'app-big-car',
   standalone: true,
-  imports: [],
+  imports: [RouterModule],
   templateUrl: './big-car.component.html',
   styleUrl: './big-car.component.css'
 })
@@ -14,5 +15,7 @@ export class BigCarComponent {
   carTitle:string= ""
   @Input()
   cardDescription:string = ""
+  @Input()
+  Id:string="0"
 
 }
